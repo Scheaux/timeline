@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_header">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+
+      <main class="main_container">
+        <div id="post-container"></div>
+        <div class="media_tools">
+          <input type="text" id="send-message" />
+          <img
+            src="https://cdn-icons.flaticon.com/png/128/2882/premium/2882877.png?token=exp=1653199833~hmac=de225b3074a79a906afe1cddc5a2664c"
+            id="mic"
+          />
+          <div class="audio_controls hidden">
+            <div class="audio_save">✔️</div>
+            <span class="audio_timer">00:00</span>
+            <div class="audio_cancel">X</div>
+          </div>
+        </div>
+
+        <div class="modal hidden" id="confirm-location">
+          <span class="modal_text">Что-то пошло не так</span>
+          <span class="modal_text morespace">
+            К сожалению нам не удалось определить ваше местоположение,
+            пожалуйста, дайте разрешение на использование геолокации, либо
+            введите координаты вручную.</span
+          >
+          <span class="modal_text">Широта и долгота через запятую</span>
+          <input type="text" class="modal_input" />
+          <div class="modal_footer">
+            <span class="modal_error fade_out">Некорректный формат</span>
+            <div class="modal_buttons">
+              <button class="modal_cancel">Отмена</button>
+              <button class="modal_ok">OK</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
